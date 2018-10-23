@@ -1,0 +1,138 @@
+/home/zhangwt/storage_drl_agents/common/Model.py:21: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = self.output_act(self.fc3(out))
+load trained ppo model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+/home/zhangwt/storage_drl_agents/common/Model.py:21: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = self.output_act(self.fc3(out))
+load trained a2c model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+/home/zhangwt/storage_drl_agents/common/Model.py:21: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = self.output_act(self.fc3(out))
+load trained a2c model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+load trained dqn model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+/home/zhangwt/storage_drl_agents/common/Model.py:21: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = self.output_act(self.fc3(out))
+load trained a2c model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+load trained dqn model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+load trained dqn model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 197, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 147, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+/home/zhangwt/storage_drl_agents/common/Model.py:21: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = self.output_act(self.fc3(out))
+load trained ppo model successfully
+Traceback (most recent call last):
+  File "/home/zhangwt/storage_drl_agents/run.py", line 199, in <module>
+    run(args.agent)
+  File "/home/zhangwt/storage_drl_agents/run.py", line 149, in run
+    socket.send_string(str(action))
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 559, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/usr/local/anaconda2/envs/force/lib/python3.6/site-packages/zmq/sugar/socket.py", line 391, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 727, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 774, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 249, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 244, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
