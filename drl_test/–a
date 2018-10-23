@@ -1,0 +1,226 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.479 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov.
+
+	Run began: Tue Jul  3 05:25:06 2018
+
+	File size set to 8388608 kB
+	Network distribution mode enabled.
+	SYNC Mode. 
+	Setting no_unlink
+	Command line used: iozone -i 0 -i 1 -i 2 -i 5 -s 8G -t 32 -+m /afs/ihep.ac.cn/users/z/zhangwt/nodelist -o -w -C –r 1M–j 2M
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 32 processes
+	Each process writes a 8388608 kByte file in 4 kByte records
+
+	Test running:
+	Children see throughput for 32 initial writers 	=   37138.75 kB/sec
+	Min throughput per process 			=     816.78 kB/sec 
+	Max throughput per process 			=    1388.55 kB/sec
+	Avg throughput per process 			=    1160.59 kB/sec
+	Min xfer 					= 4934392.00 kB
+	Child[0] xfer count = 7857368.00 kB, Throughput =    1300.61 kB/sec
+	Child[1] xfer count = 4934440.00 kB, Throughput =     816.79 kB/sec
+	Child[2] xfer count = 7529380.00 kB, Throughput =    1246.32 kB/sec
+	Child[3] xfer count = 7143456.00 kB, Throughput =    1182.44 kB/sec
+	Child[4] xfer count = 7143564.00 kB, Throughput =    1182.46 kB/sec
+	Child[5] xfer count = 4974424.00 kB, Throughput =     823.40 kB/sec
+	Child[6] xfer count = 5475404.00 kB, Throughput =     906.33 kB/sec
+	Child[7] xfer count = 8354416.00 kB, Throughput =    1382.89 kB/sec
+	Child[8] xfer count = 7816076.00 kB, Throughput =    1293.78 kB/sec
+	Child[9] xfer count = 7122820.00 kB, Throughput =    1179.02 kB/sec
+	Child[10] xfer count = 7410884.00 kB, Throughput =    1226.71 kB/sec
+	Child[11] xfer count = 4974180.00 kB, Throughput =     823.36 kB/sec
+	Child[12] xfer count = 4934392.00 kB, Throughput =     816.78 kB/sec
+	Child[13] xfer count = 7680176.00 kB, Throughput =    1271.28 kB/sec
+	Child[14] xfer count = 4942904.00 kB, Throughput =     818.19 kB/sec
+	Child[15] xfer count = 7585748.00 kB, Throughput =    1255.65 kB/sec
+	Child[16] xfer count = 5485976.00 kB, Throughput =     908.08 kB/sec
+	Child[17] xfer count = 7844568.00 kB, Throughput =    1298.49 kB/sec
+	Child[18] xfer count = 7908672.00 kB, Throughput =    1309.10 kB/sec
+	Child[19] xfer count = 8388608.00 kB, Throughput =    1388.55 kB/sec
+	Child[20] xfer count = 5616828.00 kB, Throughput =     929.74 kB/sec
+	Child[21] xfer count = 7742140.00 kB, Throughput =    1281.54 kB/sec
+	Child[22] xfer count = 7556616.00 kB, Throughput =    1250.83 kB/sec
+	Child[23] xfer count = 6029436.00 kB, Throughput =     998.04 kB/sec
+	Child[24] xfer count = 7618156.00 kB, Throughput =    1261.01 kB/sec
+	Child[25] xfer count = 7909128.00 kB, Throughput =    1309.18 kB/sec
+	Child[26] xfer count = 7618336.00 kB, Throughput =    1261.04 kB/sec
+	Child[27] xfer count = 7615892.00 kB, Throughput =    1260.64 kB/sec
+	Child[28] xfer count = 7556452.00 kB, Throughput =    1250.80 kB/sec
+	Child[29] xfer count = 7843524.00 kB, Throughput =    1298.32 kB/sec
+	Child[30] xfer count = 7908260.00 kB, Throughput =    1309.03 kB/sec
+	Child[31] xfer count = 7843792.00 kB, Throughput =    1298.36 kB/sec
+
+	Test running:
+	Children see throughput for 32 rewriters 	=   37138.82 kB/sec
+	Min throughput per process 			=     817.32 kB/sec 
+	Max throughput per process 			=    1390.38 kB/sec
+	Avg throughput per process 			=    1160.59 kB/sec
+	Min xfer 					= 4931168.00 kB
+	Child[0] xfer count = 7842328.00 kB, Throughput =    1299.83 kB/sec
+	Child[1] xfer count = 4931168.00 kB, Throughput =     817.32 kB/sec
+	Child[2] xfer count = 7514796.00 kB, Throughput =    1245.54 kB/sec
+	Child[3] xfer count = 7126936.00 kB, Throughput =    1181.26 kB/sec
+	Child[4] xfer count = 7127360.00 kB, Throughput =    1181.33 kB/sec
+	Child[5] xfer count = 4967588.00 kB, Throughput =     823.35 kB/sec
+	Child[6] xfer count = 5477756.00 kB, Throughput =     907.91 kB/sec
+	Child[7] xfer count = 8356452.00 kB, Throughput =    1385.04 kB/sec
+	Child[8] xfer count = 7805204.00 kB, Throughput =    1293.68 kB/sec
+	Child[9] xfer count = 7106164.00 kB, Throughput =    1177.81 kB/sec
+	Child[10] xfer count = 7408708.00 kB, Throughput =    1227.96 kB/sec
+	Child[11] xfer count = 4967736.00 kB, Throughput =     823.38 kB/sec
+	Child[12] xfer count = 4931316.00 kB, Throughput =     817.34 kB/sec
+	Child[13] xfer count = 7664932.00 kB, Throughput =    1270.43 kB/sec
+	Child[14] xfer count = 4939396.00 kB, Throughput =     818.68 kB/sec
+	Child[15] xfer count = 7573652.00 kB, Throughput =    1255.30 kB/sec
+	Child[16] xfer count = 5488832.00 kB, Throughput =     909.75 kB/sec
+	Child[17] xfer count = 7833868.00 kB, Throughput =    1298.43 kB/sec
+	Child[18] xfer count = 7894668.00 kB, Throughput =    1308.50 kB/sec
+	Child[19] xfer count = 8388608.00 kB, Throughput =    1390.38 kB/sec
+	Child[20] xfer count = 5617744.00 kB, Throughput =     931.12 kB/sec
+	Child[21] xfer count = 7726836.00 kB, Throughput =    1280.69 kB/sec
+	Child[22] xfer count = 7541556.00 kB, Throughput =    1249.98 kB/sec
+	Child[23] xfer count = 6021856.00 kB, Throughput =     998.09 kB/sec
+	Child[24] xfer count = 7607660.00 kB, Throughput =    1260.93 kB/sec
+	Child[25] xfer count = 7894728.00 kB, Throughput =    1308.51 kB/sec
+	Child[26] xfer count = 7607544.00 kB, Throughput =    1260.92 kB/sec
+	Child[27] xfer count = 7602112.00 kB, Throughput =    1260.02 kB/sec
+	Child[28] xfer count = 7541564.00 kB, Throughput =    1249.98 kB/sec
+	Child[29] xfer count = 7833572.00 kB, Throughput =    1298.38 kB/sec
+	Child[30] xfer count = 7895456.00 kB, Throughput =    1308.64 kB/sec
+	Child[31] xfer count = 7833468.00 kB, Throughput =    1298.36 kB/sec
+
+	Test running:
+	Children see throughput for 32 readers 		=  842766.31 kB/sec
+	Min throughput per process 			=    1154.32 kB/sec 
+	Max throughput per process 			=  155031.45 kB/sec
+	Avg throughput per process 			=   26336.45 kB/sec
+	Min xfer 					=   62472.00 kB
+	Child[0] xfer count =  303064.00 kB, Throughput =    5599.78 kB/sec
+	Child[1] xfer count =   62916.00 kB, Throughput =    1162.50 kB/sec
+	Child[2] xfer count =  303064.00 kB, Throughput =    5599.78 kB/sec
+	Child[3] xfer count =  300176.00 kB, Throughput =    5546.47 kB/sec
+	Child[4] xfer count =  299788.00 kB, Throughput =    5539.32 kB/sec
+	Child[5] xfer count =   62636.00 kB, Throughput =    1157.35 kB/sec
+	Child[6] xfer count =   85020.00 kB, Throughput =    1570.94 kB/sec
+	Child[7] xfer count =   82668.00 kB, Throughput =    1527.47 kB/sec
+	Child[8] xfer count =  303356.00 kB, Throughput =    5605.18 kB/sec
+	Child[9] xfer count =  303040.00 kB, Throughput =    5599.36 kB/sec
+	Child[10] xfer count =   81504.00 kB, Throughput =    1505.97 kB/sec
+	Child[11] xfer count =   62712.00 kB, Throughput =    1158.76 kB/sec
+	Child[12] xfer count =   62840.00 kB, Throughput =    1161.10 kB/sec
+	Child[13] xfer count =  303124.00 kB, Throughput =    5600.90 kB/sec
+	Child[14] xfer count =   62472.00 kB, Throughput =    1154.32 kB/sec
+	Child[15] xfer count =  303320.00 kB, Throughput =    5604.55 kB/sec
+	Child[16] xfer count = 7965008.00 kB, Throughput =  147172.97 kB/sec
+	Child[17] xfer count =  694260.00 kB, Throughput =   12828.04 kB/sec
+	Child[18] xfer count =  880640.00 kB, Throughput =   16269.56 kB/sec
+	Child[19] xfer count = 7565780.00 kB, Throughput =  139796.31 kB/sec
+	Child[20] xfer count = 8064476.00 kB, Throughput =  149010.89 kB/sec
+	Child[21] xfer count =  789516.00 kB, Throughput =   14588.11 kB/sec
+	Child[22] xfer count = 1135940.00 kB, Throughput =   20989.09 kB/sec
+	Child[23] xfer count = 8388608.00 kB, Throughput =  155031.45 kB/sec
+	Child[24] xfer count =  897048.00 kB, Throughput =   16574.64 kB/sec
+	Child[25] xfer count =  796380.00 kB, Throughput =   14714.97 kB/sec
+	Child[26] xfer count =  843876.00 kB, Throughput =   15576.24 kB/sec
+	Child[27] xfer count = 1115736.00 kB, Throughput =   20615.83 kB/sec
+	Child[28] xfer count = 1091392.00 kB, Throughput =   20165.85 kB/sec
+	Child[29] xfer count =  778324.00 kB, Throughput =   14363.41 kB/sec
+	Child[30] xfer count =  910232.00 kB, Throughput =   16806.01 kB/sec
+	Child[31] xfer count =  713200.00 kB, Throughput =   13169.21 kB/sec
+
+	Test running:
+	Children see throughput for 32 re-readers 	=  862914.81 kB/sec
+	Min throughput per process 			=    2203.29 kB/sec 
+	Max throughput per process 			=  157044.70 kB/sec
+	Avg throughput per process 			=   26966.09 kB/sec
+	Min xfer 					=  117716.00 kB
+	Child[0] xfer count =  292268.00 kB, Throughput =    5470.41 kB/sec
+	Child[1] xfer count =  118108.00 kB, Throughput =    2210.63 kB/sec
+	Child[2] xfer count =  292424.00 kB, Throughput =    5473.29 kB/sec
+	Child[3] xfer count =  289116.00 kB, Throughput =    5411.42 kB/sec
+	Child[4] xfer count =  289428.00 kB, Throughput =    5417.27 kB/sec
+	Child[5] xfer count =  117716.00 kB, Throughput =    2203.29 kB/sec
+	Child[6] xfer count =  163920.00 kB, Throughput =    3068.10 kB/sec
+	Child[7] xfer count =  181588.00 kB, Throughput =    3398.80 kB/sec
+	Child[8] xfer count =  292724.00 kB, Throughput =    5479.17 kB/sec
+	Child[9] xfer count =  292124.00 kB, Throughput =    5467.79 kB/sec
+	Child[10] xfer count =  180492.00 kB, Throughput =    3378.28 kB/sec
+	Child[11] xfer count =  117956.00 kB, Throughput =    2207.79 kB/sec
+	Child[12] xfer count =  117840.00 kB, Throughput =    2205.62 kB/sec
+	Child[13] xfer count =  292876.00 kB, Throughput =    5481.78 kB/sec
+	Child[14] xfer count =  117716.00 kB, Throughput =    2203.31 kB/sec
+	Child[15] xfer count =  292692.00 kB, Throughput =    5478.37 kB/sec
+	Child[16] xfer count = 8071168.00 kB, Throughput =  151069.14 kB/sec
+	Child[17] xfer count =  814304.00 kB, Throughput =   15240.02 kB/sec
+	Child[18] xfer count =  748936.00 kB, Throughput =   14017.44 kB/sec
+	Child[19] xfer count = 8037128.00 kB, Throughput =  150433.59 kB/sec
+	Child[20] xfer count = 8388608.00 kB, Throughput =  157044.70 kB/sec
+	Child[21] xfer count =  675844.00 kB, Throughput =   12649.19 kB/sec
+	Child[22] xfer count = 1074184.00 kB, Throughput =   20101.28 kB/sec
+	Child[23] xfer count = 7961492.00 kB, Throughput =  149018.20 kB/sec
+	Child[24] xfer count = 1021380.00 kB, Throughput =   19112.14 kB/sec
+	Child[25] xfer count =  763676.00 kB, Throughput =   14293.40 kB/sec
+	Child[26] xfer count = 1032784.00 kB, Throughput =   19330.51 kB/sec
+	Child[27] xfer count =  655360.00 kB, Throughput =   12266.52 kB/sec
+	Child[28] xfer count =  838836.00 kB, Throughput =   15700.27 kB/sec
+	Child[29] xfer count =  864272.00 kB, Throughput =   16173.65 kB/sec
+	Child[30] xfer count =  909312.00 kB, Throughput =   16995.31 kB/sec
+	Child[31] xfer count =  797028.00 kB, Throughput =   14914.11 kB/sec
+
+	Test running:
+	Children see throughput for 32 stride readers 	=  134104.66 kB/sec
+	Min throughput per process 			=    1377.77 kB/sec 
+	Max throughput per process 			=   20199.54 kB/sec
+	Avg throughput per process 			=    4190.77 kB/sec
+	Min xfer 					=  572208.00 kB
+	Child[0] xfer count = 2859684.00 kB, Throughput =    6885.85 kB/sec
+	Child[1] xfer count =  594356.00 kB, Throughput =    1431.15 kB/sec
+	Child[2] xfer count = 2508368.00 kB, Throughput =    6039.91 kB/sec
+	Child[3] xfer count = 2498992.00 kB, Throughput =    6017.34 kB/sec
+	Child[4] xfer count = 2501108.00 kB, Throughput =    6022.44 kB/sec
+	Child[5] xfer count =  590600.00 kB, Throughput =    1422.11 kB/sec
+	Child[6] xfer count =  586208.00 kB, Throughput =    1411.53 kB/sec
+	Child[7] xfer count =  723112.00 kB, Throughput =    1741.19 kB/sec
+	Child[8] xfer count = 2624900.00 kB, Throughput =    6320.52 kB/sec
+	Child[9] xfer count = 2505808.00 kB, Throughput =    6033.75 kB/sec
+	Child[10] xfer count =  682436.00 kB, Throughput =    1643.24 kB/sec
+	Child[11] xfer count =  590836.00 kB, Throughput =    1422.67 kB/sec
+	Child[12] xfer count =  594092.00 kB, Throughput =    1430.51 kB/sec
+	Child[13] xfer count = 2718224.00 kB, Throughput =    6545.24 kB/sec
+	Child[14] xfer count =  572208.00 kB, Throughput =    1377.77 kB/sec
+	Child[15] xfer count = 2493636.00 kB, Throughput =    6004.44 kB/sec
+	Child[16] xfer count = 2671600.00 kB, Throughput =    6432.97 kB/sec
+	Child[17] xfer count =  965640.00 kB, Throughput =    2325.16 kB/sec
+	Child[18] xfer count = 1158420.00 kB, Throughput =    2789.36 kB/sec
+	Child[19] xfer count = 4426956.00 kB, Throughput =   10659.61 kB/sec
+	Child[20] xfer count = 2625960.00 kB, Throughput =    6323.04 kB/sec
+	Child[21] xfer count = 1086116.00 kB, Throughput =    2615.26 kB/sec
+	Child[22] xfer count =  946804.00 kB, Throughput =    2279.81 kB/sec
+	Child[23] xfer count = 8388608.00 kB, Throughput =   20199.54 kB/sec
+	Child[24] xfer count =  946016.00 kB, Throughput =    2277.91 kB/sec
+	Child[25] xfer count = 1114120.00 kB, Throughput =    2682.66 kB/sec
+	Child[26] xfer count =  945796.00 kB, Throughput =    2277.38 kB/sec
+	Child[27] xfer count =  737384.00 kB, Throughput =    1775.54 kB/sec
+	Child[28] xfer count =  945768.00 kB, Throughput =    2277.31 kB/sec
+	Child[29] xfer count =  965792.00 kB, Throughput =    2325.53 kB/sec
+	Child[30] xfer count = 1158160.00 kB, Throughput =    2788.74 kB/sec
+	Child[31] xfer count =  965648.00 kB, Throughput =    2325.18 kB/sec
+
+	Test running:
