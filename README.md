@@ -12,7 +12,7 @@ we propose an automated parameter tuning method using the reinforcement learning
 Python:
 
 - Pytorch 0.4
-- Zeromq (http://zeromq.org/)
+- [Zeromq](http://zeromq.org/)
 - Numpy
 - Matplotlib
 
