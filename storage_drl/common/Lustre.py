@@ -14,6 +14,7 @@ import json
 from .Env import *
 import glob
 import re
+import datetime
 
 _OSC_NUMS = 22
 _OSC_PI_NUMS = 9
@@ -61,9 +62,7 @@ class Lustre(Env):
         llite_paths.sort()
         for llite_path in llite_paths:
             pis.extend(self._get_llite_pi(llite_path))
-
         assert self.state_dim == len(pis)
-
         return pis
 
     def _get_osc_pi(self, osc_path):
@@ -135,7 +134,6 @@ class Lustre(Env):
                 dirty_pages_misses = 0
                 stats['reward'] = 0
             else:
-
                 read_throuput = (stats['read_bytes'] - old_stats['read_bytes'] ) / (stats['snapshot_time'] - old_stats['snapshot_time']) / 1024 / 1024
                 write_throuput = (stats['write_bytes'] - old_stats['write_bytes'] ) / (stats['snapshot_time'] - old_stats['snapshot_time']) / 1024 / 1024
                 read_ops = (stats['read_operations'] - old_stats['read_operations'] ) / (stats['snapshot_time'] - old_stats['snapshot_time'])
@@ -157,20 +155,17 @@ class Lustre(Env):
             old_stats['read_ops'] = read_ops
             old_stats['write_ops'] = write_ops
 
-
             result.append(float(read_throuput))
             result.append(float(write_throuput))
             result.append(float(read_ops))
             result.append(float(write_ops))
             result.append(float(dirty_pages_hits))
             result.append(float(dirty_pages_misses))
-
         with open(os.path.join(llite_path, 'max_cached_mb'), 'r') as cachedfile:
             cached_data = cachedfile.read()
             result.append(float(re.search('(?<=used_mb: )[0-9]+', cached_data).group(0)))
             result.append(float(re.search('(?<=unused_mb: )[0-9]+', cached_data).group(0)))
             result.append(float(re.search('(?<=reclaim_count: )[0-9]+', cached_data).group(0)))
-
 
         return result
 
@@ -211,8 +206,6 @@ class Lustre(Env):
                         os.popen(set_llite + _PARAMS[index]['name'] + '=' + str(int(now_value) - _PARAMS[index]['gap']))
                         _PARAMS[index]['now'] = int(now_value) - _PARAMS[index]['gap']
 
-
-
     def reset(self):
         #  monitor metrics
         set_osc = 'lctl set_param -n /proc/fs/lustre/osc/sharefs*/'
@@ -225,7 +218,7 @@ class Lustre(Env):
 
     def step(self):
         self.reset()
-        reward = 0
+        paras = {}
         context = zmq.Context()
         socket = context.socket(zmq.REQ)
         socket.connect("tcp://tensorflow.ihep.ac.cn:5555")
@@ -236,6 +229,14 @@ class Lustre(Env):
         self.logger.addHandler(handler)
         while True:
             states = self._getstates(10)
+            #  Recording the adjustment process for human reference
+            with open('log/' + self.name + '_tuning.log', 'a') as f:
+                for p in _PARAMS:
+                    paras[p['name']] = p['now']
+                tuning = dict(time=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), paras=paras,
+                              rt=old_stats['read_throuput'], wt=old_stats['write_throuput'])
+                f.write(json.dumps(tuning) + '\n')
+
             reward = stats['reward']
             message = json.dumps(dict(name=self.name, states=states, reward=reward))
             socket.send_string(message)

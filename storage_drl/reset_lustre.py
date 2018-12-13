@@ -5,7 +5,7 @@ Created on 2018/5/22 20:16
 @author: vincent
 """
 from common import Lustre
+import socket
 
-lustre = Lustre('lustretest1')
-
+lustre = Lustre(socket.gethostname())
 lustre.reset()
