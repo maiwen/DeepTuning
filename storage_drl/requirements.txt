@@ -1,0 +1,7 @@
+#Required
+future
+#Required by modules
+influxdb
+pandas
+unidecode
+argparse
