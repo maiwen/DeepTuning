@@ -10,9 +10,10 @@ import time
 import datetime
 
 def complex(i):
-    info = os.popen('iozone -i 0 -i 1 -i 2 -i 5 –r 1M–j 2M -s 8G -t 32 -+m /afs/ihep.ac.cn/users/z/zhangwt/nodelist -o -w -C |tee –a /afs/ihep.ac.cn/users/z/zhangwt/a2c_iozone'+str(i)+'.log').read()
+    cmd = 'iozone -i 0 -i 1 -i 2 -i 5 –r 1M–j 2M -s 8G -t 32 -+m /afs/ihep.ac.cn/users/z/zhangwt/nodelist -o -w -C |tee –a /afs/ihep.ac.cn/users/z/zhangwt/a2c_iozone'+str(i)+'.log'
+    info = os.popen(cmd).read()
 
-count = 4
+count = 0
 start = time.time()
 print('iozone start at: ' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
